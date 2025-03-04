@@ -35,7 +35,10 @@ from src import functions as f
 
 # Create a config folder
 # If it has been already created it will show FileExistsError
-config_folder=f.creat_folder(path=r"",folder_name="configfile")
+try:
+    config_folder=f.creat_folder(path=r"",folder_name="configfile")
+except:
+    print("config folder already exists.")
 
 # Create a config file
 # If it has been already created it will show FileExistsError.
