@@ -17,11 +17,11 @@ def creat_configfile(cfg_file):
     if not os.path.exists(cfg_file):
        # Initialize the ConfigParser
        config = configparser.ConfigParser()
-       config['DEFAULT']={'Path':'U:\Risk_Control\ALLE\MODELL-DB\Tracking Validation Activities\MDB_overview_template.xlsx'}
+       config['DEFAULT']={'Path':''}
        config['Main']={'Loglevel':'Info'}
-       config['Database']={'Path':'U:\Risk_Control\ALLE\MODELL-DB','Filename':'ModellDBF.accdb'}
-       config['Output']={'Path':'U:\Risk_Control\ALLE\MODELL-DB\Tracking Validation Activities','Filename':'MDB_export.xlsx'}
-       config['Contact_person']={'path':'U:\Risk_Control\ALLE\MODELL-DB\Tracking Validation Activities\MDB_Modelle_Ansprechpartner.xlsx','sheet_name':'Aktuell'}
+       config['Database']={'Path':'','Filename':''}
+       config['Output']={'Path':'','Filename':''}
+       config['Contact_person']={'path':'','sheet_name':''}
 
 
        with open(cfg_file, 'w') as configfile:
